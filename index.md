@@ -33,3 +33,7 @@ title: "Evenements ISH"
     {% endif %}
   {% endfor %}
 </ul>
+
+<footer style="text-align: center; padding: 20px 0; margin-top: 50px; background-color: #333; color: #fff;">
+  <p>&copy; {{ site.time | date: '%Y' }} <a href="https://mkante.ml" style="color: #4CAF50;">mkante, ISH</a>. All rights reserved.</p>
+</footer>
