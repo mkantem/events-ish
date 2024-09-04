@@ -3,7 +3,7 @@ layout: default
 title: "Evenements ISH"
 pagination:
   enabled: true
-  per_page: 5
+  per_page: 4
   permalink: /page:num/
 ---
 
