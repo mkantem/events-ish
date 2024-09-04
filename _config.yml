@@ -6,10 +6,7 @@ url: "https://evenements.ish.edu.ml"
 future: true 
 remote_theme: "pages-themes/hacker@v0.2.0"
 
-pagination:
-  enabled: true
-  per_page: 4
-  permalink: /page:num/
+
 
 plugins:
   - jekyll-remote-theme
@@ -17,3 +14,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+pagination:
+  enabled: true
+  per_page: 4
+  permalink: /page:num/
