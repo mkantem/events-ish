@@ -13,4 +13,5 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
