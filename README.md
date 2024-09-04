@@ -1,2 +1,2 @@
 # events-ish
-A simple Jekyll-powered site listing past and current events organised at the Institut des Sciences Humaines (ISH) of Mali, with search functionality and chronological ordering.
+Un site Jekyll répertoriant les événements passés et actuels organisés à l'Institut des Sciences Humaines (ISH) du Mali, avec un ordre chronologique.
