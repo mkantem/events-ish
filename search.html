@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Recherche"
+---
+
+<h1>Search Events</h1>
+<input type="text" id="search-box" placeholder="Tapez pour rechercher..." style="width: 100%; padding: 10px; margin-bottom: 20px;">
+
+<ul id="results-container"></ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+<script>
+  var idx = lunr(function () {
+    this.field('title', { boost: 10 });
+    this.field('content');
+    this.field('author');
+    this.field('tags');
+
+    {% for post in site.posts %}
+    this.add({
+      "id": {{ forloop.index }},
+      "title": "{{ post.title | escape }}",
+      "content": "{{ post.content | strip_html | escape }}",
+      "author": "{{ post.author | escape }}",
+      "tags": "{{ post.tags | array_to_sentence_string | escape }}",
+      "url": "{{ post.url | relative_url }}"
+    });
+    {% endfor %}
+  });
+
+  document.getElementById('search-box').addEventListener('input', function() {
+    var query = this.value;
+    var results = idx.search(query);
+    var resultsContainer = document.getElementById('results-container');
+    resultsContainer.innerHTML = '';
+
+    results.forEach(function(result) {
+      var post = idx.documentStore.docs[result.ref];
+      var li = document.createElement('li');
+      li.innerHTML = '<a href="' + post.url + '">' + post.title + '</a>';
+      resultsContainer.appendChild(li);
+    });
+  });
+</script>
