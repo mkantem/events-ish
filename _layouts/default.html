@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer style="text-align: center; padding: 20px 0; margin-top: 50px; background-color: #333; color: #fff;">
+      <p>&copy; {{ site.time | date: '%Y' }} <a href="https://mkante.ml" style="color: #4CAF50;">mkante, ISH</a>. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
