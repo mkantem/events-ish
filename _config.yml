@@ -4,10 +4,13 @@ baseurl: ""
 url: "https://evenements.ish.edu.ml"
 #theme: minima 
 future: true 
-# Apply TeXt theme
-# remote_theme: "kitian616/jekyll-TeXt-theme"
 remote_theme: "pages-themes/hacker@v0.2.0"
+paginate: 5  # Number of posts per page
+paginate_path: "/page:num/"
+
 
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-paginate
+
