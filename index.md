@@ -1,10 +1,7 @@
 ---
 layout: default
 title: "Evenements ISH"
-pagination:
-  enabled: true
-  per_page: 4
-  permalink: /page:num/
+pagination: true
 ---
 
 ## Parcourez nos événements à venir et passés organisés à l'Institut des Sciences Humaines.
