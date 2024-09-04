@@ -1,0 +1,13 @@
+title: "Evenements ISH"
+description: "Liste des événements passés et actuels organisés par l'Institut des Sciences Humaines"
+baseurl: ""  
+url: "https://evenements.ish.edu.ml"
+#theme: minima 
+future: true 
+# Apply TeXt theme
+# remote_theme: "kitian616/jekyll-TeXt-theme"
+remote_theme: "pages-themes/hacker@v0.2.0"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
