@@ -2,7 +2,7 @@
 layout: post
 title: "Colloque International MANSA"
 date: 2024-06-26
-author: "Dr Mahamadou Kante"
+author: "MANSA, ISH et UU"
 tags: ["colloque", "Bamako", "décolonisation"]
 permalink: "events/mansa2024"
 ---
