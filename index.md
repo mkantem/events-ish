@@ -5,8 +5,6 @@ title: "Evenements ISH"
 
 ## Parcourez nos événements à venir et passés organisés à l'Institut des Sciences Humaines.
 
-### Directeur général: Dr Baba COULIBALY 
-
 ## Événements à venir
 
 <ul>
